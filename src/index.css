@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Unbounded", system-ui, sans-serif;
+
+  /* Dark Premium Barbershop Palette */
+  --color-brand-50: #f5f5f0;
+  /* Light text on dark backgrounds */
+  --color-brand-100: #b0b0b0;
+  /* Disabled / muted */
+  --color-brand-200: #8a8a8a;
+  /* Captions */
+  --color-brand-300: #6b6b6b;
+  /* Secondary text */
+  --color-brand-700: #2a2a2a;
+  /* Borders / dividers */
+  --color-brand-800: #1f1f1f;
+  /* Card surface */
+  --color-brand-900: #141414;
+  /* Sections / cards */
+  --color-brand-950: #0a0a0a;
+  /* Deepest background */
+
+  --color-accent: #c8a45a;
+  /* Gold */
+  --color-accent-hover: #d4b36b;
+  /* Gold hover */
+  --color-accent-muted: #a08040;
+  /* Muted gold */
+
+  --color-chrome: #3a3a3a;
+  /* Metallic lines */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Unbounded:wght@400;600;800&display=swap');
+
+body {
+  background-color: var(--color-brand-950);
+  color: var(--color-brand-50);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-unbounded {
+  font-family: var(--font-serif);
+  color: var(--color-brand-50);
+  letter-spacing: -0.02em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-700);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Gold glow utility */
+.gold-glow {
+  box-shadow: 0 0 40px rgba(200, 164, 90, 0.15), 0 0 80px rgba(200, 164, 90, 0.05);
+}
+
+/* Image overlay gradient */
+.img-overlay {
+  position: relative;
+}
+
+.img-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-brand-950) 0%, transparent 60%);
+  pointer-events: none;
+}
