@@ -77,23 +77,41 @@ function App() {
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-brand-700"></div>
               </div>
 
-              <p className="text-brand-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-10 font-light">
-                <strong className="text-brand-200 font-medium">15+ лет</strong> практики в построении бизнеса. <br className="hidden md:block" />
-                <strong className="text-brand-200 font-medium">2500+ часов</strong> работы с нейросетями.
-                <br className="hidden md:block mt-4" />
-                <span className="text-accent italic mt-4 block text-lg font-serif">«Хочешь так же? Создаю премиальные системы, которые продают и автоматизируют рутину.»</span>
+              <p className="text-brand-300 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-8 font-light mt-4">
+                <strong className="text-brand-50 text-xl md:text-2xl font-serif block mb-4 italic">Хочешь большего? Учись зарабатывать с AI, а не играться.</strong>
+                Делюсь реальными пошаговыми гайдами и готовыми инструментами — берёшь и сразу внедряешь в бизнес. Никакой теории. Только то, что приносит деньги, экономит время и повышает эффективность.
               </p>
 
-              <a
-                href="https://t.me/ai_comandos"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative px-8 py-4 bg-brand-950 border border-accent/30 hover:border-accent text-brand-50 rounded flex items-center justify-center gap-3 transition-all duration-500 hover:shadow-[0_0_40px_rgba(200,164,90,0.15)] overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-500"></div>
-                <span className="text-xs font-bold uppercase tracking-[0.15em] relative z-10 transition-transform duration-500 group-hover:-translate-x-1">Обсудить ваш проект в Telegram</span>
-                <svg className="w-4 h-4 relative z-10 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2 11 13" /><path d="M22 2 15 22 11 13 2 9l20-7z" /></svg>
-              </a>
+              {/* Bullet points */}
+              <div className="flex flex-col gap-4 text-left mx-auto mb-10 w-fit text-brand-200">
+                <div className="flex items-center gap-4">
+                  <span className="text-accent text-xl">💰</span>
+                  <span className="font-medium tracking-wide">Зарабатывать больше с AI</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-accent text-xl">⚡</span>
+                  <span className="font-medium tracking-wide">Автоматизировать бизнес</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-accent text-xl">🚀</span>
+                  <span className="font-medium tracking-wide">Запустить бизнес на AI</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 w-full max-w-sm">
+                <a
+                  href="https://t.me/ai_comandos"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative px-8 py-4 bg-brand-950 border border-accent/40 hover:border-accent text-brand-50 rounded flex items-center justify-center gap-3 transition-all duration-500 hover:shadow-[0_0_40px_rgba(200,164,90,0.2)] overflow-hidden w-full"
+                >
+                  <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-500"></div>
+                  <span className="text-xs font-bold uppercase tracking-[0.1em] relative z-10 transition-transform duration-500 group-hover:-translate-x-1">Перейти в Telegram</span>
+                  <svg className="w-5 h-5 relative z-10 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2 11 13" /><path d="M22 2 15 22 11 13 2 9l20-7z" /></svg>
+                </a>
+                <span className="text-[10px] text-brand-400 mt-2">@ai_comandos (Найди в поиске Telegram, если ссылка недоступна)</span>
+              </div>
+
             </div>
 
             {/* Copyright */}
@@ -112,3 +130,4 @@ function App() {
 }
 
 export default App;
+
